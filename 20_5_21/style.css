@@ -1,0 +1,28 @@
+* {
+	font-family: 'Nunito', sans-serif;
+}
+
+body {
+	background: rgba(0, 0, 128, 0.1);
+}
+
+#cajaVere{
+	width: 300px;
+	height: 200px;
+	background-color: green;
+}
+
+#cajaAmarilla{
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+	display: block;
+}
+
+body {
+	margin: 0px;
+}
+
+#contenedor {
+	display: flex;
+}

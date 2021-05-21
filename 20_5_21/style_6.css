@@ -1,0 +1,72 @@
+* {
+	font-family: 'Nunito', sans-serif;
+}
+
+body {
+	background: rgba(0, 0, 128, 0.1);
+}
+
+#cajaVere{
+	width: 300px;
+	height: 200px;
+	background-color: green;
+	color: 	#ffffff;
+	text-align: end;
+
+}
+
+#cajaAzul{
+	width: 200px;
+	height: 100px;
+	background-color: blue;
+}
+
+.textAzul{
+	width: 200px;
+	height: 100px;
+	transform: translate(0%, 61%);
+	text-align: center;
+	color: 	#a7caff;
+}
+
+
+#cajaAmarilla{
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+	position: absolute;
+	color: 	#724500;
+
+}
+
+#cajaBlanca{
+	width: 100px;
+	height: 100px;
+	background-color: white;
+	position: absolute;
+	left: 100px;
+	color: 	#1f74f6;
+}
+
+body {
+	margin: 0px;
+}
+
+#contenedor {
+	display: flex;
+}
+
+p {
+	margin-top: -24px;
+}
+
+.opa {
+	background-color: #fff;
+	opacity: 0.5;
+	bottom: 5px;
+	text-align: center;
+	transform: translate(10%, 0%);
+	margin-left: 11%;
+	font-size: 75%;
+	width: 10%;
+}
