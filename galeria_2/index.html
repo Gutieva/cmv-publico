@@ -11,12 +11,13 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body>
+    <body id="texto">
+        
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#!">
-                <img class="card-img-top" id="recuadro1" src="assets/logo.png" alt="..." />
+                <a class="navbar-brand" href="index.html">
+                <img class="card-img-top" id="recuadro1" src="assets/logo.png" alt="..." /> 
                 RutCicle
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -28,19 +29,26 @@
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Sobre RutCicle</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Sobre Mí</a></li>
                         <details class="nav-link">
                           <summary>
                         <a class="especial" href="#!">Ejercicios
                         </a>
                         </summary>  
                         <p><a href="index_1.html" target="_blank" title="galeria_14_5_21">Ejercicio 14_5_21</a></p>
-                        <p><a href="#">Ejercicio 2</a></p>
+                        <p><a href="Ejercicio_21_5_21.html" target="_blank" title="Ejercicio_21_5_21">Ejercicio_21_5_21</a></p>
                         <p><a href="#">Ejercicio 3</a></p>
                         </details>
                         <li class="nav-item"><a class="nav-link" href="#!">Contacto</a></li>
+
+                        <form class="form-inline">
+            <div class="md-form my-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            </div>
+          </form>
                     </ul>
                 </div>
+                <button class="cambiaColor">Color</button>  
             </div>
         </nav>
         <!-- Page Content-->
@@ -234,14 +242,22 @@
                 </div>
             </div>
         </div>
+
         <!-- Footer-->
         <footer class="py-5 bg-dark">
             <div class="container"><p class="m-0 text-center text-white">Copyright © Eva 2021</p></div>
         </footer>
+
         <!-- Bootstrap core JS-->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+
+        <script>
+            $("button").click(function(){
+                $("h1, h2, p").toggleClass("noche");
+            });
+        </script>
     </body>
 </html>

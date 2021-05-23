@@ -10105,3 +10105,21 @@ h3 {
     border-color: #dee2e6;
   }
 }
+
+:root {
+  --fuenteDia : #ff0000;
+  --fuenteNoche: #0000ff;
+}
+
+.dia {
+  color: var(--fuenteDia);
+}
+
+.noche {
+  color: var(--fuenteNoche);
+}
+
+.cambiaColor {
+  background-color: white;
+  border-radius: 5px;
+}
