@@ -1,0 +1,55 @@
+.fontstyle {
+  font-family: sans-serif;
+  background-color: white;
+  color: blue;
+  padding: 20px;
+}
+h1 {
+  font-size: 40px;
+  font-family: sans-serif;
+  background-color: white;
+  color: blue;
+  padding: 20px;
+}
+h2 {
+  color: #934c4c;
+  font-size: 48px;
+}
+p {
+  font-family: sans-serif;
+  background-color: white;
+  color: blue;
+  padding: 20px;
+  background-color: #808080;
+}
+header nav ul {
+  padding: 0;
+  margin: 0;
+}
+header nav ul li {
+  display: inline-block;
+}
+header nav ul li a {
+  padding: 5px;
+  background-color: lightskyblue;
+  color: white;
+  text-decoration: none;
+}
+.container2 {
+  width: 100%;
+  margin: 0 auto;
+}
+section {
+  background-color: yellow;
+  float: left;
+  width: 400px / 700px * 100%;
+}
+aside {
+  background-color: yellowgreen;
+  float: left;
+  width: 300px / 700px * 100%;
+}
+/* modo día-noche */
+body {
+  background-color: #934c4c;
+}

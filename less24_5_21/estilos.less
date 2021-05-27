@@ -1,0 +1,74 @@
+
+
+.fontstyle{
+    font-family: sans-serif;
+    background-color: white;
+    color: blue;
+    padding: 20px;
+}
+
+h1{
+    font-size: 40px;
+    .fontstyle();
+}
+
+h2{
+    color: if((@modo="noche"),@colorBgNoche,@colorBgDia);
+    font-size:@tamFont;
+}
+
+p{
+    .fontstyle();
+    background-color: darken(white, 50%);
+}
+
+header {
+    nav{ 
+        ul{
+            padding: 0;
+            margin: 0;
+            li{
+                display: inline-block;
+
+                 a{
+                    padding: 5px;
+                    background-color: lightskyblue;
+                    color: white;
+                    text-decoration: none;  
+                }
+            }
+        }
+    }
+}
+
+.container2{
+    width: 100%;
+    margin:0 auto;
+}
+
+section {
+    background-color: yellow;
+    float: left;
+    width: 400px / 700px * 100%;
+}
+
+aside {
+    background-color: yellowgreen;
+    float: left;
+    width: 300px / 700px * 100%;
+}
+
+/* modo día-noche */
+@colorBgDia:rgb(152, 152, 231);
+@colorBgNoche:#934c4c;
+@colorDia:black;
+@colorNoche:rgb(230, 222, 222);
+
+@tamFont:48px;
+@modo:"noche";
+
+body{
+    background-color: if((@modo="noche"),@colorBgNoche,@colorBgDia);
+}
+
+

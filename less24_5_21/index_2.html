@@ -1,0 +1,180 @@
+<!--
+HTML
+web o pagina:
+autor: Eva Gutierrez
+fecha: Mayo 2021
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+HTML
+web o pagina:
+autor: Eva Gutierrez
+fecha: Mayo 2021
+-->
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  
+  <!-- importante SEO para la etiqueta del navegador -->
+  <title>Ajuste de texto alrededor de imagenes</title>
+  <link rel="stylesheet" href="estilos.css"
+  
+  <!-- una fuente de Google -->
+  <link rel="preconnect" href="https://fonts.gstatic.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet"/>
+  
+  <!-- una hoja de estilos externa-->
+  
+  <!-- una hoja de estilos personalizada-->
+  <link href="estilos.css" rel="stylesheet"/>
+  
+  <!-- iconos u otros elementos externos -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  
+  <!-- solo aquellos estilos que solo aplican a esta pagina -->
+ <style>
+    
+body {
+  margin: 0;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1em;
+  align-items: center;
+  text-align: center;
+  border-bottom: 4px solid black;
+  background: #3e5d7b;
+}
+
+@media screen and (max-width: 900px) {
+  nav {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+ }
+}  
+
+.1 {
+  grid-column: 1;
+}
+
+.2 {
+  grid-column: 2;
+}
+
+.logo {
+  grid-column: 3;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 10vh;
+}
+
+.3 {
+  grid-column: 4;
+}
+
+.4 {
+  grid-column: 5;
+}
+
+.navLinks {
+  font-family: sans-serif;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+.navLinks:hover {
+  color: white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  padding: 1em 1em;
+}
+
+#twist {
+  color: blue;
+}
+
+  </style>
+  
+  <!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+  <!-- scripts externos de desarrollo propio en Javascript o JQuery -->
+  <script src="#"></script>
+  
+  <!-- scripts personalizados Javascript o JQuery -->
+  <script>
+    // aqui el codigo ...
+  </script>
+</head>
+
+
+<body>
+
+    <header>
+    <!-- Nav con Grid -->
+  <nav class="container">
+    <div class="1">
+    <a href="#" class="navLinks">Inicio</a>
+    </div>
+    <div class="2">
+    <a href="#" class="navLinks">Sobre mí</a>
+    </div>
+    <div class="logo">
+    	<img src="img/logo.png" alt="logo" />
+    </div>
+    <div class="3">
+    <a href="#" class="navLinks">Ejercicios</a>
+    </div>
+    <div class="4">
+    <a href="#" class="navLinks">Contacto</a>
+    </div>
+  </nav>
+<h1>Nav con Grid</h1>
+<!-- Nav con less -->
+  <nav>
+    <ul>
+        <li><a href="index_2.html">Inicio</a></li>
+        <li><a href="#">Noticias</a></li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+    <p>Aplicando less</p> 
+    <div>
+    <h2>Muestra cambio de color</h2>  
+     <button class="cambiaColor">Color</button> 
+    </div>
+  </nav>
+</header> <br />
+<div class="container2">
+    <aside>
+        Aside
+    </aside>
+ </div> <br />
+
+    <!-- Footer -->
+    <div class="pie">
+      <footer>
+        <div>&copy; 2021 
+          <a href="#" target="_blank">Eva Gutierrez</a>
+        </div>
+      </footer>
+    </div>
+
+    
+  </div>
+
+    <script>
+            $("button").click(function(){
+                $("h2,body").toggleClass("noche");
+            });
+        </script>
+</body>
