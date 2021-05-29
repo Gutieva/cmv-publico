@@ -59,6 +59,7 @@
                 <p class="lead">Rutas en bici por camino y montañas, ya sea hiendo solo o en grupo.</p>
                 <a class="btn btn-primary btn-lg" href="#!">Contactar!</a>
             </header>
+            
             <!-- Slider -->
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -271,6 +272,13 @@
             </div>
         </div>
 
+        <!-- Resolución Pantalla -->
+        <main>
+            <button onclick="myFunction()">Resolución Pantalla</button>
+            <button onclick="areaDisponible()">Area Disponible</button>
+            <p id="demo"></p>
+        </main>
+
         <!-- Footer-->
         <footer class="py-5 bg-dark">
             <div class="container"><p class="m-0 text-center text-white">Copyright © Eva 2021</p></div>
@@ -282,10 +290,29 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
 
+        <!-- Cabiar color / Día-Noche -->
         <script>
             $("button").click(function(){
                 $("h1, h2, p").toggleClass("noche");
             });
+        </script>
+
+        <!-- Resolución pantalla -->
+        <script>
+            function myFunction() {
+                var w = window.innerWidth;
+                var h = window.innerHeight;
+                document.getElementById("demo").innerHTML =
+                "Width: " + w + "<br>Height: " + h;
+             }
+        </script>
+
+        <!-- Area Disponible -->
+        <script>
+            function areaDisponible() {
+            document.write("Area visible disponible: ");
+            document.write(screen.availWidth + "*" + screen.availHeight);
+        }
         </script>
     </body>
 </html>
