@@ -54,32 +54,26 @@ fecha: Mayo 2021
 </head>
 
 
-<body onload="leerXML()">
+<body>
 
 	<!-- cabecera de pagina -->
 	<header>
 		<h1>CMS-Accenture - XML</h1>
 		<h2> cargar desde un XML </h2>
 		<br />
+		<p id="arrayDesordenado"></p>
+		<button onclick=ordenar(1)> Mayor a Menor</button>
+		<button onclick=ordenar(0)>Menor a Mayor</button>
 	</header>
 
 	<!-- bloque de contenido de la pagina -->
 	<main>
-		<button onclick="ascNombre()">Ascendente por Nombre</button>
-		<button onclick="desClave()">Descendente por Clave</button>
-		<input id="nom" type="text" placeholder="usr.." />
-		<button onclick="mostrarClave()">Mostrar clave</button>
-		<br />
-		<p>XML original:</p>
-		<p id="mensaje">... datos originales ...</p>
-		<br />
-		<p>XML ordenado:</p>
-		<p id="solicitado">... datos ordenados ...</p>
-		<br />
-		<p>CLAVE solicitada:</p>
-		<p id="clavebuscada">... del usuario elegido ...</p>
+		<p id="mensaje">Aquí ira lo que leemos</p>
+		<button onclick="ordenarUsuarios()"> Ordenar por Usuario</button>
+		<button onclick="ordenarClaves()">Ordenar por Clave</button>
 
-
+		<input id="nombre" type="text" placeholder="usr...">
+		<button type="button" onclick="filtrarBusqueda()">Mostrar Clave</button>
 	</main>
 
 
