@@ -12,7 +12,7 @@ Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
 */
 
 :root {
-  --azulclaro: #e6f2ff;
+  --azulclaro: #00d9c0;
 }
 
 * {
@@ -21,12 +21,21 @@ Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
 	font-family: 'Nunito', sans-serif;
 	text-transform:none;
 	box-sizing:border-box;
-	margin:0px;
+	margin:auto;
 	padding:0px;
 }
 
 body {
 	background: var(--azulclaro); /* Azul al 10% */
+  background-image: url("https://cdn.pixabay.com/photo/2019/07/16/18/18/frontend-4342425_960_720.png");
+  background-repeat: no-repeat;
+  background-position-y: top;
+  text-align: center;
+}
+
+main {
+  margin-left: 20%;
+  margin-top: 2%;
 }
 
 div {

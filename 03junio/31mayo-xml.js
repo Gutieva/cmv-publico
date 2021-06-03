@@ -1,4 +1,6 @@
-//variable global de la página
+// variable global de la pagina
+// un array con un elemento por cada usuario del XML
+// en realidad será un array de arrays, una matriz bidimensional
 let registrados = [];
 
 function leerXML() {
@@ -9,8 +11,8 @@ function leerXML() {
             cargarArray(this);
         }
     };
-    //xhr.open("GET", "https://carlosboniniklison.github.io/publico/ejercicios/xml/registrados2.xml", true);
-    xhr.open("GET", "registrados2.xml", true);
+    xhr.open("GET", "https://carlosboniniklison.github.io/publico/ejercicios/xml/registrados2.xml", true);
+    // xhr.open("GET", "registrados2.xml", true);
     xhr.send();
 }
 
@@ -42,32 +44,30 @@ function cargarArray(xml) {
     document.getElementById("mensaje").innerHTML = tabla;
 
     // muestro en consola el array de usuarios registrados
-    //una vez depurado, comentamos el código siguiente
+    // una vez depurado, comentamos el código siguiente
     registrados.forEach((usuario) => {
         usuario.forEach((datos) => {
             console.log(datos);
         });
     });
-
 }
 
 function ascNombre() {
-    // Ordeno la matriz global
-    // acendente por nombre
+    //Ordeno primero la matriz
     registrados.sort(
         (usuario1, usuario2) =>
             usuario1[0].localeCompare(usuario2[0]),
     );
+
     mostrar();
+
 }
 
 function mostrar() {
-    // muestro en pantalla el array de usuarios registrados
-    // en formato tabla en el id solicitado
     let tabla = "";
     registrados.forEach((usuario) => {
         usuario.forEach((datos) => {
-            tabla = "<table><tr><th>EMPLEADO</th><th>CLAVE</th></tr>";
+            tabla = "<table><tr><th>Empleado</th><th>Clave</th></tr>";
             for (i = 0; i < registrados.length; i++) {
                 // leo las etiquetas que me interesan del objeto
                 usrNom = registrados[i][0];
@@ -79,15 +79,15 @@ function mostrar() {
             tabla += "</table>"
         });
     });
-    // la mostramos en el html
     document.getElementById("ordenado").innerHTML = tabla;
 }
 
-function desClave() {
+function descClave() {
     //simplemente cambiando el orden de los usuarios en los parámetros de la función ya ordena DESC
     registrados.sort(
         (usuario2, usuario1) => usuario1[1].localeCompare(usuario2[1]),
     );
+
     mostrar();
 }
 
@@ -97,20 +97,13 @@ function mostrarClave() {
 
     for (i = 0; i < registrados.length; i++) {
         if (dato == registrados[i][0]) {
-
             pwd = registrados[i][1];
-
             break;
         }
     }
 
-
     if (pwd == null) {
-
         pwd = `El usuario solicitado no está en la BD`;
-
     }
-
     document.getElementById("claveBuscada").innerHTML = pwd;
-
 }
