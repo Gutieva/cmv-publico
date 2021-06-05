@@ -12,7 +12,7 @@ function leerXML() {
         }
     };
     xhr.open("GET", "https://gutieva.github.io/cmv-publico/3junio_2/datos.xml", true);
-    // xhr.open("GET", "registrados2.xml", true);
+    // xhr.open("GET", "datos.xml", true);
     xhr.send();
 }
 
