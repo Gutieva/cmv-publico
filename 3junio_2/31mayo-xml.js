@@ -45,7 +45,7 @@ function cargarArray(xml) {
     
     // actualizo el array
     elemento = [nom, foto, pie];
-    registrados.push(elemento);
+    orla.push(elemento);
   }
   //bloque += "</section>"
   document.getElementById("galeria").innerHTML = bloque;
