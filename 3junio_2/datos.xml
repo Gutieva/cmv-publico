@@ -102,13 +102,13 @@
     </elemento>
 
     <elemento>
-        <nombre></nombre>
+        <nombre>Pingui</nombre>
 
-        <foto></foto>
+        <foto>https://cdn.pixabay.com/photo/2018/05/24/17/09/antartica-3427135_960_720.jpg</foto>
 
-        <pie></pie>
+        <pie>Pinguino</pie>
 
-        <detalle></detalle>
+        <detalle>Pinguino de la Antártida</detalle>
     </elemento>
 
     <elemento>
