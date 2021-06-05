@@ -11,7 +11,7 @@ function leerXML() {
             cargarArray(this);
         }
     };
-    xhr.open("GET", "https://gutieva.github.io/CMV-Accenture/cmv-publico/3junio_2/datos.xmll", true);
+    xhr.open("GET", "https://gutieva.github.io/CMV-Accenture/cmv-publico/3junio_2/datos.xml", true);
     // xhr.open("GET", "datos.xml", true);
     xhr.send();
 }
