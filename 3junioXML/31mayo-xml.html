@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+HTML
+web o pagina: Arrays con JS
+entorno: curso Accenture-CMV
+autor: Eva Gutiérrez
+fecha: Mayo 2021
+-->
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- polyfill para soportar CSS3 Media Queries en MS explorer viejos -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	  <![endif]-->
+
+	<!-- importante SEO para la etiqueta del navegador -->
+	<title>Animalicos</title>
+
+	<!-- una fuente de Google -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet" />
+
+	<!-- una hoja de estilos externa-->
+
+	<!-- una hoja de estilos personalizada-->
+	<link href="31mayo-xml.css" rel="stylesheet" />
+
+	<!-- iconos u otros elementos externos -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+
+	<!-- solo aquellos estilos que solo aplican a esta pagina -->
+	<style>
+	</style>
+
+	<!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- scripts externos de desarrollo propio en Javascript o JQuery -->
+	<script src="31mayo-xml.js"></script>
+
+	<!-- scripts personalizados Javascript o JQuery -->
+	<script>
+		// aqui el codigo ...
+	</script>
+</head>
+
+
+<body onload="leerXML()">
+
+	<!-- cabecera de pagina -->
+	<header>
+		<h1>ANIMALICOS</h1>
+
+		<!-- Nav -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="31mayo-xml.html">Inicio</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Sobre Mí</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Ejercicio1/31mayo-xml.html">Ejercicio 1</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+	</header>
+
+	<!-- bloque de contenido de la pagina -->
+	<main>
+		<section id="galeria"></section>
+		
+		<section>
+			<h2>Ahora vas a ver algunos de los animalicos del mundo.</h2>
+		</section> </br>
+	</main>
+
+<!-- Galería  -->
+<div class="responsive">
+<div class="galeria">
+<a target="_blank" href="https://cdn.pixabay.com/photo/2015/04/07/14/08/praying-mantis-710996_960_720.jpg">
+<img src="https://cdn.pixabay.com/photo/2015/04/07/14/08/praying-mantis-710996_960_720.jpg" alt="" width="600" height="300">
+</a>
+<div class="desc">Esto es un Insecto Palo</div>
+</div>
+</div>
+<div class="responsive">
+<div class="galeria">
+<a target="_blank" href="https://cdn.pixabay.com/photo/2016/11/14/04/45/elephant-1822636_960_720.jpg">
+<img src="https://cdn.pixabay.com/photo/2016/11/14/04/45/elephant-1822636_960_720.jpg" width="600" height="300">
+</a>
+<div class="desc">Elefante gris</div>
+</div>
+</div>
+<div class="responsive">
+<div class="galeria">
+<a target="_blank" href="https://cdn.pixabay.com/photo/2018/08/12/16/59/ara-3601194_960_720.jpg">
+<img src="https://cdn.pixabay.com/photo/2018/08/12/16/59/ara-3601194_960_720.jpg" alt="Texto alternativo imagen 3" width="600" height="300">
+</a>
+<div class="desc">Loro Guacamayo amarillo</div>
+</div>
+</div>
+<div class="responsive">
+<div class="galeria">
+<a target="_blank" href="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_960_720.jpg">
+<img src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_960_720.jpg" width="600" height="300">
+</a>
+<div class="desc">Gato jóven</div>
+</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="galeria">
+<a target="_blank" href="https://cdn.pixabay.com/photo/2015/04/10/01/41/fox-715588_960_720.jpg">
+<img src="https://cdn.pixabay.com/photo/2015/04/10/01/41/fox-715588_960_720.jpg" alt="" width="600" height="300">
+</a>
+<div class="desc">Zorro Salvaje</div>
+</div>
+</div>
+<div class="responsive">
+<div class="galeria">
+<a target="_blank" href="https://cdn.pixabay.com/photo/2014/10/01/10/44/hedgehog-468228_960_720.jpg">
+<img src="https://cdn.pixabay.com/photo/2014/10/01/10/44/hedgehog-468228_960_720.jpg" alt="Texto alternativo imagen 3" width="600" height="300">
+</a>
+<div class="desc">Erizo bebé</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="galeria">
+<a target="_blank" href="https://cdn.pixabay.com/photo/2014/11/03/17/40/leopard-515509_960_720.jpg">
+<img src="https://cdn.pixabay.com/photo/2014/11/03/17/40/leopard-515509_960_720.jpg" width="600" height="300">
+</a>
+<div class="desc">Leopardo de ojos verdes</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="galeria">
+<a target="_blank" href="https://cdn.pixabay.com/photo/2016/05/02/13/17/deer-1367217_960_720.jpg">
+<img src="https://cdn.pixabay.com/photo/2016/05/02/13/17/deer-1367217_960_720.jpg" width="600" height="300">
+</a>
+<div class="desc">Ciervo silvestre</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="galeria">
+<a target="_blank" href="https://cdn.pixabay.com/photo/2017/12/10/15/16/white-horse-3010129_960_720.jpg">
+<img src="https://cdn.pixabay.com/photo/2017/12/10/15/16/white-horse-3010129_960_720.jpg" alt="" width="600" height="300">
+</a>
+<div class="desc">Caballo blanco en nevada</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="galeria">
+<a target="_blank" href="https://cdn.pixabay.com/photo/2016/08/14/17/04/ladybugs-1593406_960_720.jpg">
+<img src="https://cdn.pixabay.com/photo/2016/08/14/17/04/ladybugs-1593406_960_720.jpg" alt="Texto alternativo imagen 3" width="600" height="300">
+</a>
+<div class="desc">Mariquita sobre hoja</div>
+</div>
+</div>
+<div class="responsive">
+<div class="galeria">
+<a target="_blank" href="https://cdn.pixabay.com/photo/2018/05/24/17/09/antartica-3427135_960_720.jpg">
+<img src="https://cdn.pixabay.com/photo/2018/05/24/17/09/antartica-3427135_960_720.jpg" width="600" height="300">
+</a>
+<div class="desc">Pinguino de la Antártida</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="galeria">
+<a target="_blank" href="https://cdn.pixabay.com/photo/2016/12/31/21/22/discus-fish-1943755_960_720.jpg">
+<img src="https://cdn.pixabay.com/photo/2016/12/31/21/22/discus-fish-1943755_960_720.jpg" width="600" height="300">
+</a>
+<div class="desc">Pez Discus nadando</div>
+</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="galeria">
+<a target="_blank" href="https://cdn.pixabay.com/photo/2012/12/13/18/50/frog-69813_960_720.jpg">
+<img src="https://cdn.pixabay.com/photo/2012/12/13/18/50/frog-69813_960_720.jpg" alt="" width="600" height="300">
+</a>
+<div class="desc">Rana verde en su habitat</div>
+</div>
+</div>
+<div class="responsive">
+<div class="galeria">
+<a target="_blank" href="https://cdn.pixabay.com/photo/2018/09/25/21/32/chimpanzee-3703230_960_720.jpg">
+<img src="https://cdn.pixabay.com/photo/2018/09/25/21/32/chimpanzee-3703230_960_720.jpg" alt="Texto alternativo imagen 3" width="600" height="300">
+</a>
+<div class="desc">Chimpance posando</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="galeria">
+<a target="_blank" href="https://cdn.pixabay.com/photo/2016/10/01/21/03/mouse-1708379_960_720.jpg">
+<img src="https://cdn.pixabay.com/photo/2016/10/01/21/03/mouse-1708379_960_720.jpg" width="600" height="300">
+</a>
+<div class="desc">Ratón de calle</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="galeria">
+<a target="_blank" href="https://cdn.pixabay.com/photo/2012/02/24/16/59/swan-16736_960_720.jpg">
+<img src="https://cdn.pixabay.com/photo/2012/02/24/16/59/swan-16736_960_720.jpg" width="600" height="300">
+</a>
+<div class="desc">Cisne en lago</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="galeria">
+<a target="_blank" href="https://cdn.pixabay.com/photo/2016/11/29/05/32/rooster-1867562_960_720.jpg">
+<img src="https://cdn.pixabay.com/photo/2016/11/29/05/32/rooster-1867562_960_720.jpg" alt="" width="600" height="300">
+</a>
+<div class="desc">Gallo cresta roja</div>
+</div>
+</div>
+<div class="responsive">
+<div class="galeria">
+<a target="_blank" href="https://cdn.pixabay.com/photo/2011/09/28/23/19/koala-9960_960_720.jpg">
+<img src="https://cdn.pixabay.com/photo/2011/09/28/23/19/koala-9960_960_720.jpg" alt="Texto alternativo imagen 3" width="600" height="300">
+</a>
+<div class="desc">Koala dormido</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="galeria">
+<a target="_blank" href="https://cdn.pixabay.com/photo/2017/09/25/13/14/dog-2785077_960_720.jpg">
+<img src="https://cdn.pixabay.com/photo/2017/09/25/13/14/dog-2785077_960_720.jpg" width="600" height="300">
+</a>
+<div class="desc">Perro Lhasa Apso blanco</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="galeria">
+<a target="_blank" href="https://cdn.pixabay.com/photo/2014/01/14/18/31/nile-crocodile-245013_960_720.jpg">
+<img src="https://cdn.pixabay.com/photo/2014/01/14/18/31/nile-crocodile-245013_960_720.jpg" width="600" height="300">
+</a>
+<div class="desc">Coco el cocodrilo</div>
+</div>
+</div> 
+<!-- Fin galería-->
+
+	<!-- pie de pagina -->
+	<footer>
+		<br /><br /><br />
+		<div>&copy; 2021 <a href="#" target="_blank">Eva Gutiérrez</a></div>
+	</footer>
+
+	<script>
+		// seccion de codigo javascript 
+
+	</script>
+</body>
+
+</html>
