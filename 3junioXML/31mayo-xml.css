@@ -30,6 +30,11 @@ body {
   text-align: center;
 }
 
+h1, nav {
+ background-color: #bef5ee;
+}
+
+
 main {
   margin-left: 0%;
   margin-top: 2%;
@@ -394,9 +399,7 @@ nav {
   color: rgba(0, 0, 0, 0.5);
   border-color: rgba(0, 0, 0, 0.1);
 }
-.navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
+
 
 .navbar-dark .navbar-brand {
   color: #000;
@@ -419,85 +422,64 @@ nav {
 .navbar-dark .navbar-nav .nav-link.active {
   color: #000;
 }
-.navbar-dark .navbar-toggler {
-  color: rgba(255, 255, 255, 0.5);
-  border-color: rgba(255, 255, 255, 0.1);
-}
-.navbar-dark .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
+
 .navbar-dark .navbar-text {
   color: #000;
 }
 
 /* css flexbox */
 
-
-
-div {
-  /* estilos para todos los elementos <div>; */
-  /* estilo:valor; */
-  
-  /* box-sizing:border-box  incluye en las dimensiones de un elemento el espacio del padding y del border. */
-  /* display:flex   da la misma altura a todos los elementos que estÃ¡n en el mismo DIV */
+#galeria{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.claseUno {
-  /* estilos para todos los elementos que son de la clase .claseUno; */
-  /* estilo:valor; */
+figure {
+  width: 400px;
+  text-align: center; 
+  padding-top: 10px;
 }
 
-.claseUno.claseDos {
-  /* estilos para todos los elementos que son de la clase .claseUno y .claseDos;
-     NO hay espacio entre ambos selectores  */
-  /* estilo:valor; */
+#marco {
+  position: relative;
+  top: 0px;
+  left: 0px;
 }
 
-.claseUno .claseDos {
-  /* estilos para todos los elementos de .claseDos que descienden de uno de .claseUno;
-     HAY UN espacio entre ambos selectores  */
-  /* estilo:valor; */
+img {
+  height:200px;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+}  
+
+figcaption {
+  width: 100%; /* Ponerlo para forzar que coja todo el ancho y no meta marco */   
+  position: absolute;
+  bottom: 4px; 
+  left: 0px;
 }
 
-#esteElemento {
-  /* estilos para el Ãºnico elemento identificado con este #esteElemento; */
-  /* estilo:valor; */
+@media screen and (max-width:1140px) {
+  /* Jugamos con el tamaño de la pantalla y según la resolución máx ajustamos la altura de la img*/
+  figure{
+    width: 300px;
+  }
+  img{
+    height: 200px;
+  }
 }
 
-p.claseUno {
-  /* estilos para todos los elementos <p> que son de la clase .claseUno; */
-  /* estilo:valor; */
+@media screen and (max-width: 760px) {
+  figure{ 
+     width: 200px;     
+  }
+  img{
+    height: 150px;
+  }
 }
 
-p,div {
-  /* estilos para todos los elementos que sean <p> o <div>; */
-  /* estilo:valor; */
+p:active {
+ opacity: 0.5;
 }
-
-div > p {
-  /* estilos para todos los elementos que sean <p> que estÃ©n dentro (sean hijos de) un <div>; */
-  /* estilo:valor; */
-}
-
-h1 + p {
-  /* estilos para todos los elementos que sean <p> que sean hermanos y estÃ©n inmediantamente despuÃ©s de <h1>; */
-  /* estilo:valor; */
-}
-
-/*
-
-pseudoclases, asignarles estilos en este orden llamado LVHA:
-   :link â€” :visited â€” :hover â€” :active.
-   
-MÃ¡s selectores y documentaciÃ³n:
-pseudo-clases: https://www.w3schools.com/css/css_pseudo_classes.asp
-pseudo-elementos: https://www.w3schools.com/css/css_pseudo_elements.asp
-pseudo-atributos: https://www.w3schools.com/css/css_attribute_selectors.asp
-formularios: https://www.w3schools.com/css/css_form.asp
-posicionamiento: https://www.w3schools.com/css/css_positioning.asp
-selectores: https://www.w3schools.com/cssref/css_selectors.asp
-*/
-
-
-
-
