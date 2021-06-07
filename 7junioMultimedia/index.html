@@ -40,6 +40,9 @@ fecha: Mayo 2021
 
 	<!-- solo aquellos estilos que solo aplican a esta pagina -->
 	<style>
+		body {
+			text-align: center;
+		}
 
 	</style>
 
@@ -47,7 +50,7 @@ fecha: Mayo 2021
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<!-- scripts externos de desarrollo propio en Javascript o JQuery -->
-	<script src="31mayo-xml.js"></script>
+	<script src="#"></script>
 
 	<!-- scripts personalizados Javascript o JQuery -->
 	<script>
@@ -56,13 +59,13 @@ fecha: Mayo 2021
 </head>
 
 
-<body onload="leerXML()">
+<body>
 
 	<!-- cabecera de pagina -->
 	<header>
 		<h1>ANIMALICOS</h1>
 
-		<!-- Nav -->
+		<!-- Nav 
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -77,7 +80,7 @@ fecha: Mayo 2021
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav>-->
 	</header>
 
 	<!-- bloque de contenido de la pagina -->
@@ -85,7 +88,7 @@ fecha: Mayo 2021
 		<section id="galeria"></section>
 		
 		<section>
-			<h2>Ahora vas a ver algunos de los animalicos del mundo.</h2>
+			<h2>Ejercicio de video, audio, SVG y Canvas</h2>
 		</section> </br>
 	</main>
 
@@ -112,168 +115,126 @@ fecha: Mayo 2021
 </div>
 <div class="responsive">
 <div class="galeria">
-<a target="_blank" href="https://cdn.pixabay.com/photo/2018/08/12/16/59/ara-3601194_960_720.jpg">
-<img src="https://cdn.pixabay.com/photo/2018/08/12/16/59/ara-3601194_960_720.jpg" alt="Texto alternativo imagen 3" width="600" height="300">
-</a>
-<a href="https://mediavod-lvlt.rtve.es/resources/TE_SANIM1/mp3/5/1/1423223071715.mp3">Sonido</a>
-<video height="300" width="600" controls crossorigin>
-	<source src="https://www.youtube.com/embed/hcif3ka0jyg" type="video/mp4">
-	<track src="subtitulo.vtt" kind="subtitles" srclang="es" label="Español"></track>	
-</video>
+<video width="600" height="300" autoplay>
+  <source src="loro.mp4" type="video/mp4">
+  <source src="loro.ogg" type="video/ogg">
+  <source src="loro.webm" type="video/webm">
+  <track kind="subtitles" src="/loro-es.vtt" lang="es" label="Español">
+  <track kind="subtitles" src="/loro-en.vtt" lang="en" label="Inglés"> 
+      Este explorador no reconoce la etiqueta video, puede descargar el video en
+  <a href="loro.mp4" >Descargar video</a>
+  </video>
 <div class="desc">Loro Guacamayo amarillo</div>
 </div>
 </div>
-<div class="responsive">
-<div class="galeria">
-<a target="_blank" href="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_960_720.jpg">
-<img src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_960_720.jpg" width="600" height="300">
-</a>
-<div class="desc">Gato jóven</div>
-</div>
-</div>
-</div>
 
-<div class="responsive">
-<div class="galeria">
-<a target="_blank" href="https://cdn.pixabay.com/photo/2015/04/10/01/41/fox-715588_960_720.jpg">
-<img src="https://cdn.pixabay.com/photo/2015/04/10/01/41/fox-715588_960_720.jpg" alt="" width="600" height="300">
-</a>
-<div class="desc">Zorro Salvaje</div>
-</div>
-</div>
-<div class="responsive">
-<div class="galeria">
-<a target="_blank" href="https://cdn.pixabay.com/photo/2014/10/01/10/44/hedgehog-468228_960_720.jpg">
-<img src="https://cdn.pixabay.com/photo/2014/10/01/10/44/hedgehog-468228_960_720.jpg" alt="Texto alternativo imagen 3" width="600" height="300">
-</a>
-<div class="desc">Erizo bebé</div>
-</div>
-</div>
-
-<div class="responsive">
-<div class="galeria">
-<a target="_blank" href="https://cdn.pixabay.com/photo/2014/11/03/17/40/leopard-515509_960_720.jpg">
-<img src="https://cdn.pixabay.com/photo/2014/11/03/17/40/leopard-515509_960_720.jpg" width="600" height="300">
-</a>
-<div class="desc">Leopardo de ojos verdes</div>
-</div>
-</div>
-
-<div class="responsive">
-<div class="galeria">
-<a target="_blank" href="https://cdn.pixabay.com/photo/2016/05/02/13/17/deer-1367217_960_720.jpg">
-<img src="https://cdn.pixabay.com/photo/2016/05/02/13/17/deer-1367217_960_720.jpg" width="600" height="300">
-</a>
-<div class="desc">Ciervo silvestre</div>
-</div>
-</div>
-
-<div class="responsive">
-<div class="galeria">
-<a target="_blank" href="https://cdn.pixabay.com/photo/2017/12/10/15/16/white-horse-3010129_960_720.jpg">
-<img src="https://cdn.pixabay.com/photo/2017/12/10/15/16/white-horse-3010129_960_720.jpg" alt="" width="600" height="300">
-</a>
-<div class="desc">Caballo blanco en nevada</div>
-</div>
-</div>
-
-<div class="responsive">
-<div class="galeria">
-<a target="_blank" href="https://cdn.pixabay.com/photo/2016/08/14/17/04/ladybugs-1593406_960_720.jpg">
-<img src="https://cdn.pixabay.com/photo/2016/08/14/17/04/ladybugs-1593406_960_720.jpg" alt="Texto alternativo imagen 3" width="600" height="300">
-</a>
-<div class="desc">Mariquita sobre hoja</div>
-</div>
-</div>
-<div class="responsive">
-<div class="galeria">
-<a target="_blank" href="https://cdn.pixabay.com/photo/2018/05/24/17/09/antartica-3427135_960_720.jpg">
-<img src="https://cdn.pixabay.com/photo/2018/05/24/17/09/antartica-3427135_960_720.jpg" width="600" height="300">
-</a>
-<div class="desc">Pinguino de la Antártida</div>
-</div>
-</div>
-
-<div class="responsive">
-<div class="galeria">
-<a target="_blank" href="https://cdn.pixabay.com/photo/2016/12/31/21/22/discus-fish-1943755_960_720.jpg">
-<img src="https://cdn.pixabay.com/photo/2016/12/31/21/22/discus-fish-1943755_960_720.jpg" width="600" height="300">
-</a>
-<div class="desc">Pez Discus nadando</div>
-</div>
-</div>
-</div>
-
-<div class="responsive">
-<div class="galeria">
-<a target="_blank" href="https://cdn.pixabay.com/photo/2012/12/13/18/50/frog-69813_960_720.jpg">
-<img src="https://cdn.pixabay.com/photo/2012/12/13/18/50/frog-69813_960_720.jpg" alt="" width="600" height="300">
-</a>
-<div class="desc">Rana verde en su habitat</div>
-</div>
-</div>
-<div class="responsive">
-<div class="galeria">
-<a target="_blank" href="https://cdn.pixabay.com/photo/2018/09/25/21/32/chimpanzee-3703230_960_720.jpg">
-<img src="https://cdn.pixabay.com/photo/2018/09/25/21/32/chimpanzee-3703230_960_720.jpg" alt="Texto alternativo imagen 3" width="600" height="300">
-</a>
-<div class="desc">Chimpance posando</div>
-</div>
-</div>
-
-<div class="responsive">
-<div class="galeria">
-<a target="_blank" href="https://cdn.pixabay.com/photo/2016/10/01/21/03/mouse-1708379_960_720.jpg">
-<img src="https://cdn.pixabay.com/photo/2016/10/01/21/03/mouse-1708379_960_720.jpg" width="600" height="300">
-</a>
-<div class="desc">Ratón de calle</div>
-</div>
-</div>
-
-<div class="responsive">
-<div class="galeria">
-<a target="_blank" href="https://cdn.pixabay.com/photo/2012/02/24/16/59/swan-16736_960_720.jpg">
-<img src="https://cdn.pixabay.com/photo/2012/02/24/16/59/swan-16736_960_720.jpg" width="600" height="300">
-</a>
-<div class="desc">Cisne en lago</div>
-</div>
-</div>
-
-<div class="responsive">
-<div class="galeria">
-<a target="_blank" href="https://cdn.pixabay.com/photo/2016/11/29/05/32/rooster-1867562_960_720.jpg">
-<img src="https://cdn.pixabay.com/photo/2016/11/29/05/32/rooster-1867562_960_720.jpg" alt="" width="600" height="300">
-</a>
-<div class="desc">Gallo cresta roja</div>
-</div>
-</div>
-<div class="responsive">
-<div class="galeria">
-<a target="_blank" href="https://cdn.pixabay.com/photo/2011/09/28/23/19/koala-9960_960_720.jpg">
-<img src="https://cdn.pixabay.com/photo/2011/09/28/23/19/koala-9960_960_720.jpg" alt="Texto alternativo imagen 3" width="600" height="300">
-</a>
-<div class="desc">Koala dormido</div>
-</div>
-</div>
-
-<div class="responsive">
-<div class="galeria">
-<a target="_blank" href="https://cdn.pixabay.com/photo/2017/09/25/13/14/dog-2785077_960_720.jpg">
-<img src="https://cdn.pixabay.com/photo/2017/09/25/13/14/dog-2785077_960_720.jpg" width="600" height="300">
-</a>
-<div class="desc">Perro Lhasa Apso blanco</div>
-</div>
-</div>
-
-<div class="responsive">
-<div class="galeria">
-<a target="_blank" href="https://cdn.pixabay.com/photo/2014/01/14/18/31/nile-crocodile-245013_960_720.jpg">
-<img src="https://cdn.pixabay.com/photo/2014/01/14/18/31/nile-crocodile-245013_960_720.jpg" width="600" height="300">
-</a>
-<div class="desc">Coco el cocodrilo</div>
-</div>
-</div> 
 <!-- Fin galería-->
+
+<!-- SVG & CANVAS -->	
+	<svg width="300" height="200">
+  		<polygon points="100,10 40,198 190,78 10,78 160,198"
+ 		 style="fill:#8053ff; stroke:black;stroke-width:5;fill-rule:evenodd;" />
+		Sorry, your browser does not support inline SVG.
+	</svg>
+
+	<canvas id="myCanvas" width="200" height="100" style="border:2px solid #1c1caf;">
+ 	</canvas>
+	<script>
+		var c = document.getElementById("myCanvas");
+		var ctx = c.getContext("2d");
+		// dibujamos y rellenamos un rectángulo
+		ctx.fillStyle = "#b00";
+		ctx.fillRect(45,80,110,60);
+		// rellenamos texto
+		ctx.fillStyle = "#0b0";
+		ctx.font = "30px Arial"; 
+		ctx.fillText("Una Estrella",10,50);
+	</script>
+
+	<!-- Lienzo en canvas -->
+	<canvas id="lienzo" width="500" height="300" style="border: 1px solid blue">;
+		<p>Tu navegador no soporta CANVAS. Deberías actualizar tu navegador</p>
+	</canvas>
+	<!-- Dibujar lienzo Canvas -->
+ 	<script>
+  	var hoja=document.getElementById("lienzo");
+    var lienzo=hoja.getContext("2d");
+  	/*Aquí escribiremos TODAS las órdenes que nos permiten dibujar dentro del CANVAS*/
+  		/* cielo*/
+  	lienzo.fillStyle = "#B5CDFF";
+	lienzo.fillRect(0,0,500,300);
+		/* sol */
+	lienzo.fillStyle="#F8FF5A";
+	lienzo.beginPath();
+	lienzo.arc(290,130,54,0,Math.PI*2,true);
+	lienzo.closePath;
+	lienzo.fill();
+		/* nubes */
+	lienzo.fillStyle="rgba(232,236,247,0.5)";
+	lienzo.beginPath();
+	lienzo.arc(10,200,80,0,Math.PI*2, true);
+	lienzo.arc(88,220,46,0,Math.PI*2, true);
+	lienzo.arc(154,199,30,0,Math.PI*2, true);
+	lienzo.arc(232,210,62,0,Math.PI*2, true);
+	lienzo.arc(320,205,25,0,Math.PI*2, true);
+	lienzo.arc(380,200,44,0,Math.PI*2, true);
+	lienzo.arc(442,208,23,0,Math.PI*2, true);
+	lienzo.arc(498,200,41,0,Math.PI*2, true);
+	lienzo.closePath;
+	lienzo.fill();
+		/* mar */
+	var gr=lienzo.createLinearGradient(0,200,0,280);
+	gr.addColorStop(0,"#D3DEF3");
+	gr.addColorStop(1,"#0628A4");
+	lienzo.fillStyle=gr;
+	lienzo.fillRect(0,200,500,300);
+		/* casco del barco */
+	lienzo.beginPath();
+	lienzo.fillStyle="#656652";
+	lienzo.strokeStyle="#3C3F09"
+	lienzo.moveTo(300,219);
+	lienzo.lineTo(360,219);
+	lienzo.lineTo(368,203);
+	lienzo.lineTo(296,206);
+	lienzo.lineTo(300,219);
+	lienzo.closePath;
+	lienzo.stroke();
+	lienzo.fill();
+		/* Quilla del barco */
+	lienzo.beginPath();
+	lienzo.fillStyle="#3C3F09";
+	lienzo.beginPath();
+	lienzo.moveTo(300,219);
+	lienzo.lineTo(360,219);
+	lienzo.lineTo(364,212);
+	lienzo.lineTo(298,214);
+	lienzo.lineTo(300,219);
+	lienzo.fill();
+		/* Mástil del barco */
+	lienzo.fillStyle="#867048";
+	lienzo.beginPath();
+	lienzo.moveTo(314,205);
+	lienzo.lineTo(330,101);
+	lienzo.lineTo(334,103);
+	lienzo.lineTo(322,204);
+	lienzo.fill();
+		/* Dibujando la vela del barco */
+	lienzo.fillStyle="rgba(210,151,50,0.6)";
+	lienzo.beginPath();
+	lienzo.moveTo(333,105);
+	lienzo.lineTo(378,194);
+	lienzo.lineTo(322,188);
+	lienzo.lineTo(333,105);
+	lienzo.closePath;
+	lienzo.fill();
+		/* Dibujando la isla */
+	lienzo.fillStyle="#2E7B10";
+	lienzo.beginPath();
+	lienzo.arc(100,250,45,-0.3,Math.PI*1.1, true);
+	lienzo.arc(135,246,33,-0.3,Math.PI*1.1, true);
+	lienzo.closePath;
+	lienzo.fill();
+	</script>
 
 	<!-- pie de pagina -->
 	<footer>
@@ -288,3 +249,4 @@ fecha: Mayo 2021
 </body>
 
 </html>
+
