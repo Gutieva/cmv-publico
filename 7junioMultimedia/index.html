@@ -43,6 +43,11 @@ fecha: Mayo 2021
 		body {
 			text-align: center;
 		}
+		
+		::cue {
+   		 color: yellow;
+    	font: 1.5em sans-serif;
+		}
 
 	</style>
 
@@ -115,15 +120,13 @@ fecha: Mayo 2021
 </div>
 <div class="responsive">
 <div class="galeria">
-<video width="600" height="300" autoplay>
-  <source src="loro.mp4" type="video/mp4">
-  <source src="loro.ogg" type="video/ogg">
-  <source src="loro.webm" type="video/webm">
-  <track kind="subtitles" src="/loro-es.vtt" lang="es" label="Español">
-  <track kind="subtitles" src="/loro-en.vtt" lang="en" label="Inglés"> 
-      Este explorador no reconoce la etiqueta video, puede descargar el video en
-  <a href="loro.mp4" >Descargar video</a>
-  </video>
+<article>
+        <video id="video" controls>
+            <source src="loro.webm" />
+            <source src="loro.mp4" />
+            <track src="subtitulos.vtt" label="Spanish subtitles" kind="subtitles" srclang="es" default />
+        </video>
+    </article>
 <div class="desc">Loro Guacamayo amarillo</div>
 </div>
 </div>
