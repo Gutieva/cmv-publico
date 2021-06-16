@@ -245,7 +245,7 @@ function leerXML() {
       cargarArray(this);
     }
   };
-  xhr.open("GET", "https://gutieva.github.io/cmv-publico/Final/index.html", true);
+  xhr.open("GET", "https://gutieva.github.io/cmv-publico/Final/datos.xml", true);
   xhr.send();
 }
 function cargarArray(xml) {
