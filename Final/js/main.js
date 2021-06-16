@@ -245,8 +245,7 @@ function leerXML() {
       cargarArray(this);
     }
   };
-  xhr.open("GET", "https://raquelmalo.github.io/CMV-publico/mmedia/datos.xml", true);
-  //xhr.open("GET", "datos.xml", true); //problema de política de control de acceso HTTP: C0RS (Cross-Origin Resource Sharing)
+  xhr.open("GET", "https://gutieva.github.io/cmv-publico/Final/index.html", true);
   xhr.send();
 }
 function cargarArray(xml) {
