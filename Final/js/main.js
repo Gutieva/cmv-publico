@@ -253,6 +253,7 @@ function cargarArray(xml) {
   var nom;
   var foto;
   var elemento = [];
+  var registrados = [];
   var xmlDoc = xml.responseXML;
 
   var x = xmlDoc.getElementsByTagName("elemento");
@@ -267,13 +268,24 @@ function cargarArray(xml) {
     nom = x[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue;
     foto = x[i].getElementsByTagName("foto")[0].childNodes[0].nodeValue;
     pie = x[i].getElementsByTagName("pie")[0].childNodes[0].nodeValue;
+    detalle = x[i].getElementsByTagName("detalle")[0].childNodes[0].nodeValue;
     // actualizo el bloque de visualización ( Usar ' o el carácter de escape: \" para las " si voy concatenando el string)
     bloque += `<figure>
-              <h3>${nom}</h3>
-                <div id="marco">
-                  <img alt="${nom}" src=" ${foto}" />
-                  <figcaption>${pie}</figcaption>
+              <div class="contenido contenido-personajes">
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img class="flip-image" alt="${nom}" src=" ${foto}" /> 
+                    <p>${pie} </p>
                 </div>
+                <div class="flip-box-back">
+                    <h2>${nom}</h2><br>
+                    <p>${detalle} </p>
+                </div>
+            </div>
+        </div>
+    </div>
+                
               </figure>`;
     
     // actualizo el array
@@ -281,6 +293,6 @@ function cargarArray(xml) {
     registrados.push(elemento);
   }
   //bloque += "</section>"
-  document.getElementById("galeria").innerHTML = bloque;
+  document.getElementById("gale").innerHTML = bloque;
 }
- 
+
